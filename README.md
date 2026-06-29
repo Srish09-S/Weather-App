@@ -26,4 +26,4 @@ A modern and responsive Weather Dashboard built using React that provides real-t
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots 
