@@ -1,4 +1,4 @@
-## 🌦️ Weathify
+## 🌦️ Weatherify
 
 A modern and responsive Weather Dashboard built using React that provides real-time weather updates for any location using a weather API.
 
