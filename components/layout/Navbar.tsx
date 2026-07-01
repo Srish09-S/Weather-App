@@ -15,11 +15,11 @@ export default function Navbar() {
 
         <div>
           <h1 className="text-4xl font-black text-white">
-            Weather Dashboard
+            Weatherify
           </h1>
 
           <p className="text-slate-400">
-            Live Forecast
+            Verify the Weather 
           </p>
         </div>
       </div>
