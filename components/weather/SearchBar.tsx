@@ -7,18 +7,20 @@ interface Props {
   city: string;
   setCity: (city: string) => void;
   search: () => void;
+  getCurrentLocation: () => void;
 }
 
 export default function SearchBar({
   city,
   setCity,
   search,
+  getCurrentLocation,
 }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 25 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: .2 }}
+      transition={{ delay: 0.2 }}
       className="
       mt-10
       rounded-[30px]
@@ -32,13 +34,13 @@ export default function SearchBar({
     >
       <div className="flex gap-4 items-center">
 
-        <Search className="text-cyan-300 w-7 h-7"/>
+        <Search className="text-cyan-300 w-7 h-7" />
 
         <input
           value={city}
-          onChange={(e)=>setCity(e.target.value)}
-          onKeyDown={(e)=>{
-            if(e.key==="Enter") search();
+          onChange={(e) => setCity(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") search();
           }}
           placeholder="Search any city..."
           className="
@@ -70,15 +72,17 @@ export default function SearchBar({
         </button>
 
         <button
+          onClick={getCurrentLocation}
+          title="Use Current Location"
           className="
           p-4
           rounded-2xl
           bg-white/10
-          hover:bg-white/20
+          hover:bg-cyan-500/20
           transition
           "
         >
-          <MapPin className="text-cyan-300"/>
+          <MapPin className="text-cyan-300" />
         </button>
 
       </div>
