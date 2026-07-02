@@ -15,7 +15,7 @@ export default function Navbar() {
 
         <div>
           <h1 className="text-4xl font-black text-white">
-            Weatherify ⛅
+            Weatherify ⛅ 
           </h1>
 
           <p className="text-slate-400">
